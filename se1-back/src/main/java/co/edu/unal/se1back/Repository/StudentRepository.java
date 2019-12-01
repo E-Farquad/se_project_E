@@ -5,4 +5,4 @@ import co.edu.unal.se1back.model.*;
 import javax.transaction.Transactional;
 
 @Transactional
-public interface UserRepository extends UserBaseRepository<User> { }
+public interface StudentRepository extends UserBaseRepository<Student> { }

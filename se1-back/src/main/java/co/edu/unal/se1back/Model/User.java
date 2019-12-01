@@ -22,12 +22,10 @@ import javax.persistence.Table;
  * Created by javergarav on 20/11/19.
  */
 @Entity(name = "user")
-//@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@Table(name = "user")
-@EntityListeners(AuditingEntityListener.class)
-public class User {
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public abstract class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id;
 
     @NotBlank
