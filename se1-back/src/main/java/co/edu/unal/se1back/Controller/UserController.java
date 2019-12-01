@@ -26,6 +26,8 @@ public class UserController {
     @Autowired
     StudentRepository studentRepository;
 
+    @Autowired
+    TutorRepository tutorRepository;
 
     @GetMapping("/user")
     public List<User> getAllUsers() {
@@ -79,7 +81,7 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
-
+    //student
     @GetMapping("/student")
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
@@ -119,7 +121,7 @@ public class UserController {
         return updatedStudent;
     }
 
-    @DeleteMapping("/student/{id}")
+    @DeleteMapping("/student/{id_student}")
     public ResponseEntity<?> deleteStudent(@PathVariable(value = "id_student") Long studentId) {
 
         Student student = studentRepository.findById(studentId)
@@ -128,4 +130,54 @@ public class UserController {
         studentRepository.delete(student);
         return ResponseEntity.ok().build();
     }
+
+    //tutor
+    @GetMapping("/tutor")
+    public List<Tutor> getAllTutors() {
+        return tutorRepository.findAll();
+    }
+
+    @PostMapping("/tutor")
+    public Tutor createTutor(@Valid @RequestBody Tutor tutor) {
+        return tutorRepository.save(tutor);
+    }
+
+    @GetMapping("/tutor/{id_tutor}")
+    public Tutor getTutorById(@PathVariable(value = "id_tutor") Long tutorId) {
+        return tutorRepository.findById(tutorId)
+                .orElseThrow(() -> new ResourceNotFoundException("Tutor", "id_tutor", tutorId));
+    }
+
+    @PutMapping("/tutor/{id_tutor}")
+    public Tutor updateTutor(@PathVariable(value = "id_tutor") Long tutorId,
+                                 @Valid @RequestBody Tutor tutorDetails) {
+
+        Tutor tutor = tutorRepository.findById(tutorId)
+                .orElseThrow(() -> new ResourceNotFoundException("Tutor", "id_tutor", tutorId));
+
+
+
+        tutor.setOffice(tutorDetails.getOffice());
+        tutor.setOffice_hours(tutorDetails.getOffice_hours());
+        tutor.setFaculty(tutorDetails.getFaculty());
+        tutor.setDepartment(tutorDetails.getDepartment());
+
+
+
+        Tutor updatedTutor = tutorRepository.save(tutor);
+
+        return updatedTutor;
+    }
+
+    @DeleteMapping("/tutor/{id_tutor}")
+    public ResponseEntity<?> deleteTutor(@PathVariable(value = "id_tutor") Long tutorId) {
+
+        Tutor tutor = tutorRepository.findById(tutorId)
+                .orElseThrow(() -> new ResourceNotFoundException("Tutor", "id_tutor", tutorId));
+
+        tutorRepository.delete(tutor);
+        return ResponseEntity.ok().build();
+    }
+
+
 }
