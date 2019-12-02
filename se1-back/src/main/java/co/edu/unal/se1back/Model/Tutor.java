@@ -5,8 +5,8 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import co.edu.unal.se1back.model.*;
+import java.util.List;
 
 
 @Entity(name = "tutor")
@@ -23,6 +23,9 @@ public class Tutor extends User {
 
     @NotBlank
     private String department;
+
+    @OneToMany(mappedBy="tutor")
+    private List <Student> students;
 
     public String getOffice() {
         return office;
@@ -54,5 +57,13 @@ public class Tutor extends User {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 }

@@ -7,6 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import co.edu.unal.se1back.model.*;
 
 
 @Entity(name = "student")
@@ -22,11 +23,14 @@ public class Student extends User {
     private String pappi;
 
     @NotBlank
-    private String carrer;
+    private String career;
 
     @NotBlank
     private String progress;
 
+    @ManyToOne
+    @JoinColumn(name="tutor_id")
+    private Tutor tutor;
 
     public String getPapa() {
         return papa;
@@ -52,12 +56,12 @@ public class Student extends User {
         this.pappi = pappi;
     }
 
-    public String getCarrer() {
-        return carrer;
+    public String getCareer() {
+        return career;
     }
 
-    public void setCarrer(String carrer) {
-        this.carrer = carrer;
+    public void setCareer(String career) {
+        this.career = career;
     }
 
     public String getProgress() {
@@ -66,5 +70,13 @@ public class Student extends User {
 
     public void setProgress(String progress) {
         this.progress = progress;
+    }
+
+    public Tutor getTutor() {
+        return tutor;
+    }
+
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
     }
 }

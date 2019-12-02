@@ -110,8 +110,9 @@ public class UserController {
         student.setPapa(studentDetails.getPapa());
         student.setPa(studentDetails.getPa());
         student.setPappi(studentDetails.getPappi());
-        student.setCarrer(studentDetails.getCarrer());
+        student.setCareer(studentDetails.getCareer());
         student.setProgress(studentDetails.getProgress());
+        student.setTutor(studentDetails.getTutor());
 
         Student updatedStudent = studentRepository.save(student);
 
@@ -161,7 +162,7 @@ public class UserController {
         tutor.setOffice_hours(tutorDetails.getOffice_hours());
         tutor.setFaculty(tutorDetails.getFaculty());
         tutor.setDepartment(tutorDetails.getDepartment());
-
+        tutor.setStudents(tutorDetails.getStudents());
 
 
         Tutor updatedTutor = tutorRepository.save(tutor);
