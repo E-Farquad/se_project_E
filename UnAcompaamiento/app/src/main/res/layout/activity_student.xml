@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estudiante1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login1"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Juanito Alimaña"
+            android:textColor="@color/white"
+            android:id="@+id/teacher_name"
+            android:textSize="20dp"
+            android:layout_marginEnd="50dp"/>
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="Estudiante"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="45dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TUTOR"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            />
+
+        <ListView
+            android:id="@+id/tutor_data"
+            android:layout_width="match_parent"
+            android:layout_height="297dp"
+            android:layout_marginBottom="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ir_solicitud"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Solicitud"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ir_bandeja"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Bandeja de entrada"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
