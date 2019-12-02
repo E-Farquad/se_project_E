@@ -1,6 +1,7 @@
 package co.edu.unal.se1back.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -30,6 +31,7 @@ public class Student extends User {
 
     @ManyToOne
     @JoinColumn(name="tutor_id")
+    @JsonManagedReference
     private Tutor tutor;
 
     public String getPapa() {

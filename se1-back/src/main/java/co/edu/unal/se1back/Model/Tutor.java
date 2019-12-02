@@ -7,6 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import co.edu.unal.se1back.model.*;
 import java.util.List;
+import com.fasterxml.jackson.annotation.*;
 
 
 @Entity(name = "tutor")
@@ -25,6 +26,7 @@ public class Tutor extends User {
     private String department;
 
     @OneToMany(mappedBy="tutor")
+    @JsonBackReference
     private List <Student> students;
 
     public String getOffice() {
