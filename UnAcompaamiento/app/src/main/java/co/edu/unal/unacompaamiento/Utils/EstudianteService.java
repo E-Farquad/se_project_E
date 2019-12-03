@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 public interface EstudianteService {
 
     @GET("listar/")
-    Call<List<Estudiante>> getUser();
+    Call<List<Estudiante>> getEstudiantes();
 
 }

@@ -19,8 +19,8 @@ public class EstudianteAdapter extends ArrayAdapter<Estudiante> {
     private Context context;
     private List<Estudiante> estudiantes;
 
-    public EstudianteAdapter(@NonNull Context context, int resource, int textViewResourceId, @NonNull List<Estudiante> objects) {
-        super(context, resource, textViewResourceId, objects);
+    public EstudianteAdapter(@NonNull Context context, int resource, @NonNull List<Estudiante> objects) {
+        super(context, resource, objects);
         this.context = context;
         this.estudiantes = objects;
     }
