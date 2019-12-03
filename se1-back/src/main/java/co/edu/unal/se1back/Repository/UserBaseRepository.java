@@ -1,6 +1,6 @@
 package co.edu.unal.se1back.repository;
 
-import co.edu.unal.se1back.model.*;
+import co.edu.unal.se1back.Model.*;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.jpa.repository.JpaRepository;

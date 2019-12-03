@@ -1,4 +1,4 @@
-package co.edu.unal.se1back.model;
+package co.edu.unal.se1back.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -15,15 +15,14 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
-
-
+import java.lang.String;
 
 /**
  * Created by javergarav on 20/11/19.
  */
 @Entity(name = "user")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public abstract class User {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
     private Long id;
@@ -48,6 +47,7 @@ public abstract class User {
 
     @NotBlank
     private String email;
+
 
     public Long getId() {
         return id;
