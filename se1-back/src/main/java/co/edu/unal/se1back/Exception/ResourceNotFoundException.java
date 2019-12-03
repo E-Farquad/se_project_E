@@ -1,4 +1,4 @@
-package co.edu.unal.se1back.exception;
+package co.edu.unal.se1back.Exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

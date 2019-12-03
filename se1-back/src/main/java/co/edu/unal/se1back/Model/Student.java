@@ -1,4 +1,4 @@
-package co.edu.unal.se1back.model;
+package co.edu.unal.se1back.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.*;
@@ -8,7 +8,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import co.edu.unal.se1back.model.*;
+
+import java.lang.String;
 
 
 @Entity(name = "student")
@@ -33,6 +34,7 @@ public class Student extends User {
     @JoinColumn(name="tutor_id")
     @JsonManagedReference
     private Tutor tutor;
+
 
     public String getPapa() {
         return papa;
