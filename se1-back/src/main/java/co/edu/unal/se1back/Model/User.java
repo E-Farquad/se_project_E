@@ -35,9 +35,6 @@ public abstract class User {
     private String password;
 
     @NotBlank
-    private String name;
-
-    @NotBlank
     private String document_type;
 
     @NotNull
@@ -103,13 +100,5 @@ public abstract class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }

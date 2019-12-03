@@ -13,6 +13,9 @@ import co.edu.unal.se1back.model.*;
 
 @Entity(name = "student")
 public class Student extends User {
+	
+	@NotBlank
+	private String nombre;
 
     @NotBlank
     private String papa;
@@ -78,7 +81,15 @@ public class Student extends User {
         return tutor;
     }
 
-    public void setTutor(Tutor tutor) {
+    public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setTutor(Tutor tutor) {
         this.tutor = tutor;
     }
 }
