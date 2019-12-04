@@ -59,9 +59,6 @@ public class UserController {
         validate.add(loginValidation);
         validate.add(userRol);
 
-
-
         return validate;
     }
-    
 }
