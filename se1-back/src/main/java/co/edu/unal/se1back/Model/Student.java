@@ -32,7 +32,7 @@ public class Student extends User {
 
     @ManyToOne
     @JoinColumn(name="tutor_id")
-    @JsonManagedReference
+    @JsonIgnore
     private Tutor tutor;
 
 
@@ -76,6 +76,7 @@ public class Student extends User {
         this.progress = progress;
     }
 
+    @JsonIgnore
     public Tutor getTutor() {
         return tutor;
     }

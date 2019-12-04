@@ -1,73 +1,127 @@
 package co.edu.unal.se1back.Controller;
 
-import co.edu.unal.se1back.Model.User;
-import co.edu.unal.se1back.Repository.UserRepository;
+import co.edu.unal.se1back.Repository.StudentRepository;
+import co.edu.unal.se1back.Repository.TutorRepository;
 import co.edu.unal.se1back.Exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/api")
 public class UserController {
-/*
 
     @Autowired
-    UserRepository userRepository;
+    StudentRepository studentRepository;
 
+    @Autowired
+    TutorRepository tutorRepository;
 
+    /*
 
-        Log In
+        The function verify the login and if the user is student or tutor:
 
-        If any credentials of the user is incorrect the function return false, but
-        if the two credentials are correct return true
+        - If both credentials of the user are correct loginValidation will be equals true
+          otherwise loginValidation will be false
 
+        - If the user are Student userRol will be equals 'Student' otherwise will be equals 'Tutor'
 
-    @GetMapping("/user")
-    public boolean logIn (String username, String password){
-        final User user = userRepository.getUserByUsername(username);
-        boolean login = false;
-        if (user.getUsername() == username){
-            if(user.getPassword() == password){
-                login = true;
-            }
-        }
-        else {
-            login = false;
-        }
-        return login;
-    }
+          The function return a List with both variables, in the position 0 is the
+          loginValidation and in the position 1 is the userRol
 
+     */
 
-        Check user rol.
+    @GetMapping("/user/login/{username}-{password}")
+    public List validate_LogIn(@PathVariable(value = "username") String username,
+        @PathVariable(value = "password") String password){
+        List validate = new ArrayList();
 
-        If the username correspond a Student the function return "Student",
-        if the username correspond a Teacher the function return "Teacher"
+        final String studentCredentials = "" + studentRepository.getStudentCredentials(username, password);
+        boolean loginValidation = false;
+        String userRol = "";
 
-
-    @GetMapping("/user")
-    public String checkUserRol(String username){
-        final User user = userRepository.getUserByUsername(username);
-        String rol = "";
-        if (user.getRol() == "Student"){
-            rol = "Student";
+        if(studentCredentials != null && studentCredentials.equals("Student")){
+           userRol = studentCredentials;
+           loginValidation = true;
         }
         else{
-            rol = "Teacher";
+            final String tutorCredentials = "" + tutorRepository.getTutorCredentials(username, password);
+            if(tutorCredentials != null && tutorCredentials.equals("Tutor")){
+                userRol = tutorCredentials;
+                loginValidation = true;
+            }
         }
-        return rol;
+
+        validate.add(loginValidation);
+        validate.add(userRol);
+
+
+
+        return validate;
     }
 
 
+     /*
+    @GetMapping("/user/login/{username}")
+    public String Validate_logIn (@PathVariable(value = "username") String username, String password){
+        List validate = new ArrayList();
+        boolean isStudent = false;
+        boolean loginValidation = false;
+        String studentCredentials = "";
+        String tutorCredentials = "";
+        studentCredentials += studentRepository.getStudentCredentials(username);
 
-        Exceptions
+        boolean Tutor = false;
+        boolean Student = false;
 
+        if (studentCredentials == null) {
 
-    @GetMapping("/users/{id}")
-    public User getUserById(@PathVariable(value = "id") Long userId) {
-        return userRepository.findById(userId)
-                .orElseThrow(() -> new ResourceNotFoundException("User", "id", userId));
+            tutorCredentials += tutorRepository.getTutorCredentials(username);
+            String[] student = tutorCredentials.split(",");
+
+            for(String s: student){
+                validate.add(s);
+            }
+            if(username == validate.get(0)){
+                Tutor = true;
+                if (password == validate.get(1))
+                    loginValidation = true;
+
+                else
+                    loginValidation = false;
+            }
+            else
+                loginValidation = false;
+        }
+        else{
+            String[] student = studentCredentials.split(",");
+
+            for(String s: student){
+                validate.add(s);
+            }
+            if (username == validate.get(0)){
+                Student = true;
+                if(password == validate.get(1)) {
+                    loginValidation = true;
+                    isStudent = true;
+                }
+                else
+                    loginValidation = false;
+            }
+            else
+                loginValidation = false;
+        }
+
+        //validate.clear();
+
+        //validate.add(Student);
+        //validate.add(Tutor);
+
+        return tutorCredentials;
     }
 
     */
