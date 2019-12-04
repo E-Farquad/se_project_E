@@ -14,4 +14,7 @@ public interface StudentRepository extends JpaRepository<Student, Long>{
     @Query("select s from student s where s.tutor.id = ?1")
     List<Student> getStudents(Long tutorId);
 
+    @Query("select s.rol from student s where s.username = ?1 and s.password = ?2")
+    String getStudentCredentials(String username, String password);
+
 }
