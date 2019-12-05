@@ -53,7 +53,49 @@
             android:id="@+id/tutor_data"
             android:layout_width="match_parent"
             android:layout_height="297dp"
-            android:layout_marginBottom="50dp" />
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/NombreTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre tutor"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/IDTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id tutor"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/OficinaTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oficina Tutor"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/HorarioTutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horario Tutor"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                />
+        </ListView>
 
         <Button
             android:layout_width="match_parent"

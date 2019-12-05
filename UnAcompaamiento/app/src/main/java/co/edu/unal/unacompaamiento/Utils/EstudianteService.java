@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 
 public interface EstudianteService {
 
-    @GET("listar/")
-    Call<List<Estudiante>> getEstudiantes();
+    @GET("/student/{tutor_id}")
+    Call<List<Estudiante>> getEstudiantes(String id_tutor);
 
 }

@@ -29,7 +29,7 @@ public class EstudianteAdapter extends ArrayAdapter<Estudiante> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent){
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = layoutInflater.inflate(R.layout.activity_main,parent,false);
+        View rowView = layoutInflater.inflate(R.layout.activity_tutor,parent,false);
 
         TextView txtID_Estudiante = (TextView)rowView.findViewById(R.id.ID_Estudiante);
         TextView txtNombre_Estudiante = (TextView)rowView.findViewById(R.id.Nombre_Estudiante);

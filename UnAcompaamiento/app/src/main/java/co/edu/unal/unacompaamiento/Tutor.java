@@ -1,18 +1,11 @@
 package co.edu.unal.unacompaamiento;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +19,8 @@ import retrofit2.Response;
 public class Tutor extends AppCompatActivity {
 
     EstudianteService estudianteService;
+    TextView id_tutor;
+    String ID_TUTOR;
     List<Estudiante> listaEstudiantes = new ArrayList<>();
     ListView listView;
 
@@ -35,11 +30,15 @@ public class Tutor extends AppCompatActivity {
         setContentView(R.layout.activity_tutor);
 
         listView = (ListView) findViewById(R.id.listaTutor);
-        listarEstudiantes();
+        id_tutor = (TextView) findViewById(R.id.id_tutor);
+
+        ID_TUTOR = id_tutor.getText().toString().trim();
+
+        listarEstudiantesDeTutor(ID_TUTOR);
     }
 
-    public void listarEstudiantes(){
-        Call<List<Estudiante>> call = estudianteService.getEstudiantes();
+    public void listarEstudiantesDeTutor(String id_tutor){
+        Call<List<Estudiante>> call = estudianteService.getEstudiantes(id_tutor);
 
         call.enqueue(new Callback<List<Estudiante>>() {
             @Override
