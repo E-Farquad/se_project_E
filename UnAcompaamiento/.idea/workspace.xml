@@ -7,45 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e15c8452-6f56-4e6b-9a46-249e77833a2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/co/edu/unal/unacompaamiento/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/co/edu/unal/unacompaamiento/test/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/EstudianteAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/EstudianteAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Tutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/EstudianteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_student.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/maven/co.edu.unal/se1-back/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/maven/co.edu.unal/se1-back/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/maven/co.edu.unal/se1-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/maven/co.edu.unal/se1-back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Exception/ResourceNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/Tutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/Tutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/StudentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/TutorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/TutorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/UserBaseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/UserBaseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Se1BackApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Se1BackApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,14 +36,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="75" column="40" lean-forward="true" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/TutorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#341#529#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/TutorAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Tutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-329">
+              <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,16 +137,16 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Estudiante.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/User.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/UserService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/EstudianteAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/TutorAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/TutorAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Tutor.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/EstudianteService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/TutorService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_student.xml" />
       </list>
     </option>
@@ -332,10 +358,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/data/model/LoggedInUser.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/Apis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -344,10 +366,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bandeja1.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solicitud.xml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
@@ -388,38 +406,6 @@
             <element signature="e#1059#1060#0" expanded="true" />
             <element signature="e#1101#1102#0" expanded="true" />
             <element signature="e#1130#1131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -482,10 +468,6 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_info.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -518,40 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/TutorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="98" selection-start-line="42" selection-start-column="98" selection-end-line="42" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/TutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Tutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="72" column="53" lean-forward="true" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/EstudianteService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -562,16 +510,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_info.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solicitud.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Utils/TutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="e#341#529#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/Estudiante1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="75" column="40" lean-forward="true" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/TutorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

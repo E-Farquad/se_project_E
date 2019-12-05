@@ -29,7 +29,6 @@ public class Estudiante1 extends AppCompatActivity {
     TextView idTutor;
     TutorService tutorService;
     List<Profesor> tutor = new ArrayList<>();
-    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +73,7 @@ public class Estudiante1 extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Profesor>> call, Response<List<Profesor>> response) {
                 tutor = response.body();
-                listView.setAdapter(new TutorAdapter(Estudiante1.this, R.layout.activity_student, tutor));
+                info_tutor.setAdapter(new TutorAdapter(Estudiante1.this, R.layout.activity_student, tutor));
             }
 
             @Override

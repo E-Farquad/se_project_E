@@ -1,7 +1,7 @@
 package co.edu.unal.unacompaamiento.model;
 
 public class Profesor {
-    private int id;
+    private String id;
     private String name;
     private String oficina;
     private String horario;
@@ -16,11 +16,11 @@ public class Profesor {
         this.name = name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
