@@ -15,7 +15,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 @RestController
 @RequestMapping("/api")
-public class UserController {
+public class TutorController {
 
     @Autowired
     TutorRepository tutorRepository;

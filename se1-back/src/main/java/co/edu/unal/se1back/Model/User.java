@@ -49,6 +49,9 @@ public abstract class User {
     @NotBlank
     private String email;
 
+
+
+
     public Long getId() {
         return id;
     }

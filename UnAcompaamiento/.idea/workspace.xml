@@ -7,53 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e15c8452-6f56-4e6b-9a46-249e77833a2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/.settings/org.springframework.ide.eclipse.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Exception/ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Model/Tutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Repository/StudentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Repository/TutorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Repository/UserBaseRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/java/co/edu/unal/se1back/Se1BackApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/bin/src/test/java/co/edu/unal/se1back/Se1BackApplicationTests.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Verifiable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/TutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/TutorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Tutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Se1BackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Se1BackApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../se1-back/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/maven/co.edu.unal/se1-back/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/META-INF/maven/co.edu.unal/se1-back/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Exception/ResourceNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/Tutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/StudentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/TutorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/UserBaseRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/classes/co/edu/unal/se1back/Se1BackApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/target/test-classes/co/edu/unal/se1back/Se1BackApplicationTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +39,52 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Estudiante.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,6 +142,24 @@
             <path>
               <item name="UnAcompañamiento" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="UnAcompañamiento" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="UnAcompañamiento" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="unacompaamiento" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnAcompañamiento" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="unacompaamiento" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UnAcompañamiento" type="1abcf292:AndroidViewProjectNode" />
@@ -301,38 +325,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/data/Result.java" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/data/model/LoggedInUser.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/UserAdapter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/solicitud.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -410,21 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Estudiante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_list.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
@@ -435,17 +412,6 @@
           <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -477,6 +443,44 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_info.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Estudiante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/Profesor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/edu/unal/unacompaamiento/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

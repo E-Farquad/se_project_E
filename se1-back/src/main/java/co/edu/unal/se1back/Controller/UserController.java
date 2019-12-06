@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
-
+import java.sql.*;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -21,11 +21,42 @@ public class UserController {
     UserRepository userRepository;
 
     @Autowired
-    StudentRepository studentRepository;
-
-    @Autowired
     TutorRepository tutorRepository;
 
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @PostMapping("/user")
+    public Boolean loginVerification(@Valid @RequestBody Verifiable user)throws SQLException{
+        String sqlA = "SELECT * FROM student WHERE username like ? AND password like ?";
+
+        List<Student> respuesta = jdbcTemplate.query(sqlA,new Object[]{"%" + user.getUsername() + "%", user.getPassword()} , (rs, rowNum) ->
+                new Student(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("career"),
+                        rs.getString("pa"),
+                        rs.getString("papa"),
+                        rs.getString("pappi"),
+                        rs.getString("progress"),
+                        null));
+
+            if(respuesta.size() >0)return true;
+            else return false;
+
+
+
+    }
+
+
+
+    /*
     @GetMapping("/user")
     public List<User> getAllUsers() {
         return userRepository.findAll();
@@ -77,5 +108,9 @@ public class UserController {
         userRepository.delete(user);
         return ResponseEntity.ok().build();
     }
+
+*/
+
+
 
 }

@@ -34,6 +34,23 @@ public class Student extends User {
     @JsonManagedReference
     private Tutor tutor;
 
+    public Student(Long id,Long document_number, String document_type,String email, String name, String password,String rol, String username,String career,String pa,  String papa,  String pappi,  String progress, Tutor tutor) {
+        this.setId(id);
+        this.setUsername(username);
+        this.setPassword(password);
+        this.setName(name);
+        this.setDocument_type(document_type);
+        this.setDocument_number(document_number);
+        this.setRol(rol);
+        this.setEmail(email);
+        this.setPapa(papa);
+        this.setPa(pa);
+        this.setPappi(pappi);
+        this.setCareer(career);
+        this.setProgress(progress);
+        this.setTutor(tutor);
+    }
+
     public String getPapa() {
         return papa;
     }
@@ -74,9 +91,7 @@ public class Student extends User {
         this.progress = progress;
     }
 
-    public Tutor getTutor() {
-        return tutor;
-    }
+    public Tutor getTutor() {return tutor; }
 
     public void setTutor(Tutor tutor) {
         this.tutor = tutor;
