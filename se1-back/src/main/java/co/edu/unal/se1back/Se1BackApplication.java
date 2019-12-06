@@ -1,4 +1,4 @@
- package co.edu.unal.se1back;
+package co.edu.unal.se1back;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
