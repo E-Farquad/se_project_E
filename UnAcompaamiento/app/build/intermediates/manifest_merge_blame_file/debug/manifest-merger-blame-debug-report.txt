@@ -6,74 +6,74 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml
+8-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml
+9-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:5:5-83
-11-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:5:22-64
+11-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:5:5-83
+11-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:7:5-27:19
+13-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:7:5-27:19
 14        android:allowBackup="true"
-14-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:8:9-35
+14-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.0.1] C:\Users\Segio Gonzalez\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+15-->[androidx.core:core:1.0.1] /Users/gabo/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/AndroidManifest.xml:22:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:9:9-43
+17-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:10:9-41
+18-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:11:9-54
+19-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:12:9-35
+20-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:12:9-35
 21        android:theme="@style/AppTheme" >
-21-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:13:9-40
+21-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:13:9-40
 22        <activity android:name="co.edu.unal.unacompaamiento.Student_info" />
-22-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:14:9-59
-22-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:14:19-47
+22-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:14:9-59
+22-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:14:19-47
 23        <activity android:name="co.edu.unal.unacompaamiento.Bandeja1" />
-23-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:15:9-46
-23-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:15:19-43
+23-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:15:9-46
+23-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:15:19-43
 24        <activity android:name="co.edu.unal.unacompaamiento.Tutor" />
-24-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:16:9-43
-24-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:16:19-40
+24-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:16:9-43
+24-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:16:19-40
 25        <activity android:name="co.edu.unal.unacompaamiento.solicitud" />
-25-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:17:9-47
-25-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:17:19-44
+25-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:17:9-47
+25-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:17:19-44
 26        <activity android:name="co.edu.unal.unacompaamiento.Estudiante1" />
-26-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:18:9-49
-26-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:18:19-46
+26-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:18:9-49
+26-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:18:19-46
 27        <activity android:name="co.edu.unal.unacompaamiento.data_list" />
-27-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:19:9-47
-27-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:19:19-44
+27-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:19:9-47
+27-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:19:19-44
 28        <activity android:name="co.edu.unal.unacompaamiento.MainActivity" >
-28-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:20:9-26:20
-28-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:20:19-47
+28-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:20:9-26:20
+28-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:20:19-47
 29            <intent-filter>
-29-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:21:13-25:29
+29-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:21:13-25:29
 30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:22:17-69
-30-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:22:25-66
+30-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:22:17-69
+30-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:22:25-66
 31
 32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:24:17-77
-32-->C:\Users\Segio Gonzalez\Documents\ProyectoFinal\se_project_E\UnAcompaamiento\app\src\main\AndroidManifest.xml:24:27-74
+32-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:24:17-77
+32-->/Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:24:27-74
 33            </intent-filter>
 34        </activity>
 35
 36        <provider
-36-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Segio Gonzalez\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+36-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/7309f8169174f11110ad56440ca8f929/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
 37            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-37-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Segio Gonzalez\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+37-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/7309f8169174f11110ad56440ca8f929/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
 38            android:authorities="co.edu.unal.unacompaamiento.lifecycle-process"
-38-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Segio Gonzalez\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+38-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/7309f8169174f11110ad56440ca8f929/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
 39            android:exported="false"
-39-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Segio Gonzalez\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/7309f8169174f11110ad56440ca8f929/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
 40            android:multiprocess="true" />
-40-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Segio Gonzalez\.gradle\caches\transforms-2\files-2.1\7309f8169174f11110ad56440ca8f929\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+40-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/7309f8169174f11110ad56440ca8f929/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
 41    </application>
 42
 43</manifest>
