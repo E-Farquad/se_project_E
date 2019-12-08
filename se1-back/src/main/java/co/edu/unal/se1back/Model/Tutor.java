@@ -30,8 +30,21 @@ public class Tutor extends User {
     private List <Student> students;
 
 
-
-
+    public Tutor(Long id,Long document_number, String document_type,String email, String name, String password,String rol, String username, String department, String faculty,String office, String office_hours, List<Student> students) {
+        this.setId(id);
+        this.setUsername(username);
+        this.setPassword(password);
+        this.setName(name);
+        this.setDocument_type(document_type);
+        this.setDocument_number(document_number);
+        this.setRol(rol);
+        this.setEmail(email);
+        this.setOffice(office);
+        this.setOffice_hours(office_hours);
+        this.setFaculty(faculty);
+        this.setDepartment(department);
+        this.setStudents(students);
+    }
     public String getOffice() {
         return office;
     }

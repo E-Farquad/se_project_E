@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e15c8452-6f56-4e6b-9a46-249e77833a2e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Verifiable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/TutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/TutorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/Tutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/java/co/edu/unal/se1back/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../se1-back/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../se1-back/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

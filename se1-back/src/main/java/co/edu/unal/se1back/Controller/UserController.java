@@ -47,10 +47,27 @@ public class UserController {
                         rs.getString("progress"),
                         null));
 
-            if(respuesta.size() >0)return true;
-            else return false;
+        if(respuesta.size() >0)return true;
 
+        sqlA = "SELECT * FROM tutor WHERE username like ? AND password like ?";
 
+        List<Tutor> respuesta2 = jdbcTemplate.query(sqlA,new Object[]{"%" + user.getUsername() + "%", user.getPassword()} , (rs, rowNum) ->
+                new Tutor(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("department"),
+                        rs.getString("faculty"),
+                        rs.getString("office"),
+                        rs.getString("office_hours"),
+                        null));
+        if(respuesta2.size() >0)return true;
+        else return false;
 
     }
 
