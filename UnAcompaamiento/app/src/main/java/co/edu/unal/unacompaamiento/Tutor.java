@@ -24,20 +24,20 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Tutor extends AppCompatActivity {
-
+/*
     EstudianteService estudianteService;
     List<Estudiante> listaEstudiantes = new ArrayList<>();
     ListView listView;
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor);
 
-        listView = (ListView) findViewById(R.id.listaTutor);
-        listarEstudiantes();
+        //listView = (ListView) findViewById(R.id.listaTutor);
+        //listarEstudiantes();
     }
-
+    /*
     public void listarEstudiantes(){
         Call<List<Estudiante>> call = estudianteService.getEstudiantes();
 
@@ -54,4 +54,5 @@ public class Tutor extends AppCompatActivity {
             }
         });
     }
+    */
 }

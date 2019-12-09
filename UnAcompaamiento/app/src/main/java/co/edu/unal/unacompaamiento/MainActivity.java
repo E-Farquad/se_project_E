@@ -4,22 +4,35 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.telecom.Call;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.util.Log;
 
+import java.io.IOException;
 import java.util.regex.Pattern;
 
+import co.edu.unal.unacompaamiento.Services.LogInService;
 import co.edu.unal.unacompaamiento.Utils.Cliente;
 import co.edu.unal.unacompaamiento.model.User;
+import co.edu.unal.unacompaamiento.model.Verifiable;
+import okhttp3.Request;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+public class MainActivity extends AppCompatActivity{
 
     private EditText username;
     private EditText password;
+    public static final String BaseURL = "http://192.168.0.18:8080/";
+    private Boolean InDataBase=false;
+    private Boolean IsStudent=false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +41,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         username = findViewById(R.id.et_correo);
         password = findViewById(R.id.et_contraseña);
-
-        findViewById(R.id.ir_estudiante1);
+        Button button = (Button) findViewById(R.id.ir_estudiante1);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                userLogin();
+            }
+        });
     }
+/*
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.ir_estudiante1:
+                openStudentMain();
+                userLogin();
 
+                break;
+
+            default:
+
+                break;
+        }
+    }
+*/
     private void userLogin(){
         String user = username.getText().toString().trim();
         String pass = password.getText().toString().trim();
+
 
         if(user.isEmpty()){
             username.setError("El usuario es requerido");
@@ -46,20 +80,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             password.requestFocus();
             return;
         }
-    }
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
+        Verifiable verifiable = new Verifiable(user,pass);
+        LogInService postService = retrofit.create(LogInService.class);
+        Call<Boolean> call = postService.VerifyIfUser(verifiable);
+        call.enqueue(new Callback<Boolean>() {
+            @Override
+            public void onResponse(Call<Boolean> call, Response<Boolean> response) {
+                System.out.println(response.body());
+                InDataBase = response.body();
+            }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.ir_estudiante1:
+            @Override
+            public void onFailure(Call<Boolean> call, Throwable t) {
+                Log.e("Error", t.getMessage());
+            }
+        });
 
-                userLogin();
+        if(InDataBase){
 
-            break;
+            call = postService.VerifyIfStudent(verifiable);
+            call.enqueue(new Callback<Boolean>() {
+                @Override
+                public void onResponse(Call<Boolean> call, Response<Boolean> response) {
+                    IsStudent = response.body();
+                    if (IsStudent){
+                        openStudentMain();
+                    }else{
+                        openTutorMain();
+                    }
+                }
 
-            default:
+                @Override
+                public void onFailure(Call<Boolean> call, Throwable t) {
+                    Log.e("Error", t.getMessage());
+                }
+            });
 
-            break;
+
+        }else{
+            username.setError("Usuario o contraseña incorrectos");
         }
+
     }
+
+    private void openStudentMain() {
+        Intent intent = new Intent(this, Estudiante1.class);
+        startActivity(intent);
+    }
+
+    private void openTutorMain() {
+        Intent intent = new Intent(this, Tutor.class);
+        startActivity(intent);
+    }
+
 }

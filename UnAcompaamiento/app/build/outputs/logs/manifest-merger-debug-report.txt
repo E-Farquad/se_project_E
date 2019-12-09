@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/9ee5da6fca20f6f07dce6c73fc4ca33a/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/gabo/.gradle/caches/transforms-2/files-2.1/dfb17c32c9e1bced7bb89f3e844a7607/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gabo/.gradle/caches/transforms-2/files-2.1/c1763829f79bc3811543d2bb9a22b866/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
@@ -38,20 +38,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/gabo/.gradle/cache
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/35d6382087ac1999db47004e3bf24934/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/8893b90c6f2a61edd1acfa898cb4cde1/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/2d1f640c1b4beb33089ff5c91bbd7f31/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
 		INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:1-36:12
 		INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:2:11-69
@@ -59,8 +59,28 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:5:5-83
 	android:name
 		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:6:5-97
+	android:name
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:9:5-95
+	android:name
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:10:5-91
+	android:name
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:11:5-88
+	android:name
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:11:22-85
 application
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:7:5-27:19
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:13:5-34:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/9ee5da6fca20f6f07dce6c73fc4ca33a/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/gabo/.gradle/caches/transforms-2/files-2.1/9ee5da6fca20f6f07dce6c73fc4ca33a/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gabo/.gradle/caches/transforms-2/files-2.1/c1763829f79bc3811543d2bb9a22b866/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -76,55 +96,57 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/gabo/.gradle/cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/gabo/.gradle/caches/transforms-2/files-2.1/46da25c3e2ae6308b2227b660caa604d/core-1.0.1/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:19:9-40
+	android:networkSecurityConfig
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:20:9-69
 activity#co.edu.unal.unacompaamiento.Student_info
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:14:9-59
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:21:9-59
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:21:19-47
 activity#co.edu.unal.unacompaamiento.Bandeja1
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:15:9-46
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:22:9-46
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:15:19-43
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:22:19-43
 activity#co.edu.unal.unacompaamiento.Tutor
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:16:9-43
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:23:9-43
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:16:19-40
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:23:19-40
 activity#co.edu.unal.unacompaamiento.solicitud
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:17:9-47
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:24:9-47
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:17:19-44
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:24:19-44
 activity#co.edu.unal.unacompaamiento.Estudiante1
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:18:9-49
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:25:9-49
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:18:19-46
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:25:19-46
 activity#co.edu.unal.unacompaamiento.data_list
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:19:9-47
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:26:9-47
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:19:19-44
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:26:19-44
 activity#co.edu.unal.unacompaamiento.MainActivity
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:20:9-26:20
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:27:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml:31:27-74
 uses-sdk
 INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/gabo/Documents/ingesoft1/ProyectoFinal/se_project_E/UnAcompaamiento/app/src/main/AndroidManifest.xml

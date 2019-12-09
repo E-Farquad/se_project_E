@@ -26,7 +26,10 @@ public class UserController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @PostMapping("/user")
+
+
+    //simplemente verificar si está en la bse de datos, sea estudiante o tutor
+    @PostMapping("/VerifyUser")
     public Boolean loginVerification(@Valid @RequestBody Verifiable user)throws SQLException{
         String sqlA = "SELECT * FROM student WHERE username like ? AND password like ?";
 
@@ -70,6 +73,60 @@ public class UserController {
         else return false;
 
     }
+
+
+
+    //Verificar especificamente si es un estudiante
+    @PostMapping("/VerifyStudent")
+    public Boolean studentLoginVerification(@Valid @RequestBody Verifiable user)throws SQLException {
+        String sqlA = "SELECT * FROM student WHERE username like ? AND password like ?";
+
+        List<Student> respuesta = jdbcTemplate.query(sqlA, new Object[]{"%" + user.getUsername() + "%", user.getPassword()}, (rs, rowNum) ->
+                new Student(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("career"),
+                        rs.getString("pa"),
+                        rs.getString("papa"),
+                        rs.getString("pappi"),
+                        rs.getString("progress"),
+                        null));
+
+        if (respuesta.size() > 0) return true;
+        else return false;
+    }
+
+    //verificar especificamente si es un tutor
+    @PostMapping("/VerifyTutor")
+    public Boolean tutorLoginVerification(@Valid @RequestBody Verifiable user)throws SQLException {
+        String sqlA = "SELECT * FROM tutor WHERE username like ? AND password like ?";
+
+        List<Tutor> respuesta2 = jdbcTemplate.query(sqlA, new Object[]{"%" + user.getUsername() + "%", user.getPassword()}, (rs, rowNum) ->
+                new Tutor(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("department"),
+                        rs.getString("faculty"),
+                        rs.getString("office"),
+                        rs.getString("office_hours"),
+                        null));
+        if (respuesta2.size() > 0) return true;
+        else return false;
+    }
+
+
 
 
 
