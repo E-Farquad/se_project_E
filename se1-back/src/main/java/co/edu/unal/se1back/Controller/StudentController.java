@@ -1,7 +1,7 @@
-package co.edu.unal.se1back.controller;
+package co.edu.unal.se1back.Controller;
 
-import co.edu.unal.se1back.model.*;
-import co.edu.unal.se1back.repository.*;
+import co.edu.unal.se1back.Model.*;
+import co.edu.unal.se1back.Repository.*;
 import co.edu.unal.se1back.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 
 import javax.validation.Valid;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -27,6 +29,60 @@ public class StudentController {
     @GetMapping("/student")
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
+    }
+
+    @GetMapping("/studentInfoByUsername/{username}")
+    public List<Student> getStudentInfo(@PathVariable (value = "username") String username)throws SQLException {
+
+        String sqlA = "SELECT * FROM student WHERE username=?";
+        List<Student> studentsInfo= jdbcTemplate.query(sqlA,new Object[]{username}, (rs, rowNum) ->
+                new Student(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("career"),
+                        rs.getString("pa"),
+                        rs.getString("papa"),
+                        rs.getString("pappi"),
+                        rs.getString("progress"),
+                        null));
+
+        return studentsInfo;
+
+    }
+
+    @GetMapping("/tutorIdByStudentUsername/{username}")
+    public Long getTutorId(@PathVariable(value = "username") String username){
+        return studentRepository.getTutorId(username);
+    }
+
+    @GetMapping("/studentTutorById/{id}")
+    public List<Tutor> getTutorInfo(@PathVariable (value = "id") Long tutorId)throws SQLException{
+
+        String sqlA = "SELECT * FROM tutor WHERE id=?";
+
+        List<Tutor> tutor = jdbcTemplate.query(sqlA,new Object[]{tutorId} , (rs, rowNum) ->
+                new Tutor(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("department"),
+                        rs.getString("faculty"),
+                        rs.getString("office"),
+                        rs.getString("office_hours"),
+                        null));
+
+        return tutor;
     }
 
     @PostMapping("/student")

@@ -1,4 +1,4 @@
-package co.edu.unal.se1back.model;
+package co.edu.unal.se1back.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.*;
@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import co.edu.unal.se1back.model.*;
+import co.edu.unal.se1back.Model.*;
 
 
 public class Verifiable{

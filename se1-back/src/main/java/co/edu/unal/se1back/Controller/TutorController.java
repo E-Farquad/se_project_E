@@ -1,7 +1,7 @@
-package co.edu.unal.se1back.controller;
+package co.edu.unal.se1back.Controller;
 
-import co.edu.unal.se1back.model.*;
-import co.edu.unal.se1back.repository.*;
+import co.edu.unal.se1back.Model.*;
+import co.edu.unal.se1back.Repository.*;
 import co.edu.unal.se1back.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.sql.*;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -20,10 +22,36 @@ public class TutorController {
     @Autowired
     TutorRepository tutorRepository;
 
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
     //tutor
     @GetMapping("/tutor")
     public List<Tutor> getAllTutors() {
         return tutorRepository.findAll();
+    }
+
+    @GetMapping("/tutorStudents/{tutor_id}")
+    public List<Student> getStudentInfo(@PathVariable (value = "tutor_id") Long tutorId){
+
+        String sqlA = "SELECT * FROM student WHERE tutor_id=?";
+        List<Student> students = jdbcTemplate.query(sqlA,new Object[]{tutorId}, (rs, rowNum) ->
+                new Student(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("career"),
+                        rs.getString("pa"),
+                        rs.getString("papa"),
+                        rs.getString("pappi"),
+                        rs.getString("progress"),
+                        null));
+        return students;
     }
 
     @PostMapping("/tutor")

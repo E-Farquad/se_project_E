@@ -1,4 +1,4 @@
-package co.edu.unal.se1back.model;
+package co.edu.unal.se1back.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

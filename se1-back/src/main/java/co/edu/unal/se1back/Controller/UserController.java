@@ -1,7 +1,7 @@
-package co.edu.unal.se1back.controller;
+package co.edu.unal.se1back.Controller;
 
-import co.edu.unal.se1back.model.*;
-import co.edu.unal.se1back.repository.*;
+import co.edu.unal.se1back.Model.*;
+import co.edu.unal.se1back.Repository.*;
 import co.edu.unal.se1back.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
