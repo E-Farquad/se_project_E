@@ -1,76 +1,61 @@
 package co.edu.unal.unacompaamiento.model;
 
-public class Estudiante {
-    private int id;
-    private float PAPA;
-    private float PA;
-    private float PAPI;
-    private String Carrera;
-    private int avance;
-    private String Tutor;
-    private String nombre;
+public class Estudiante extends User {
+    private String papa;
+    private String pa;
+    private String pappi;
+    private String career;
+    private String progress;
+    private String tutor;
 
-    public String getNombre() {
-        return nombre;
+
+    public String getPapa() {
+        return papa;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPapa(String papa) {
+        this.papa = papa;
     }
 
-    public int getId() {
-        return id;
+    public String getPa() {
+        return pa;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPa(String pa) {
+        this.pa = pa;
     }
 
-    public float getPAPA() {
-        return PAPA;
+    public String getPappi() {
+        return pappi;
     }
 
-    public void setPAPA(float PAPA) {
-        this.PAPA = PAPA;
+    public void setPappi(String pappi) {
+        this.pappi = pappi;
     }
 
-    public float getPA() {
-        return PA;
+    public String getCareer() {
+        return career;
     }
 
-    public void setPA(float PA) {
-        this.PA = PA;
+    public void setCareer(String career) {
+        this.career = career;
     }
 
-    public float getPAPI() {
-        return PAPI;
+    public String getProgress() {
+        return progress;
     }
 
-    public void setPAPI(float PAPI) {
-        this.PAPI = PAPI;
-    }
-
-    public String getCarrera() {
-        return Carrera;
-    }
-
-    public void setCarrera(String carrera) {
-        Carrera = carrera;
-    }
-
-    public int getAvance() {
-        return avance;
-    }
-
-    public void setAvance(int avance) {
-        this.avance = avance;
+    public void setProgress(String progress) {
+        this.progress = progress;
     }
 
     public String getTutor() {
-        return Tutor;
+        return tutor;
     }
 
     public void setTutor(String tutor) {
-        Tutor = tutor;
+        this.tutor = tutor;
     }
 }
+
+

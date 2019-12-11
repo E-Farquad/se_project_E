@@ -1,19 +1,20 @@
 package co.edu.unal.unacompaamiento.model;
 
 public class User {
-    private int id;
+    private Long id;
     private String username;
-    private String contraseña;
-    private String tipo_documento;
-    private int numero_documento;
+    private String password;
+    private String name;
+    private String document_type;
+    private Long document_number;
     private String rol;
     private String email;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -25,28 +26,36 @@ public class User {
         this.username = username;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPassword() {
+        return password;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getTipo_documento() {
-        return tipo_documento;
+    public String getName() {
+        return name;
     }
 
-    public void setTipo_documento(String tipo_documento) {
-        this.tipo_documento = tipo_documento;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getNumero_documento() {
-        return numero_documento;
+    public String getDocument_type() {
+        return document_type;
     }
 
-    public void setNumero_documento(int numero_documento) {
-        this.numero_documento = numero_documento;
+    public void setDocument_type(String document_type) {
+        this.document_type = document_type;
+    }
+
+    public Long getDocument_number() {
+        return document_number;
+    }
+
+    public void setDocument_number(Long document_number) {
+        this.document_number = document_number;
     }
 
     public String getRol() {
