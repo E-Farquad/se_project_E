@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity{
 
     private EditText username;
     private EditText password;
-    public static final String BaseURL = "http://192.168.0.12:8080/";
+    public static final String BaseURL = "http://192.168.1.120:8080/";
     private Boolean InDataBase=false;
     private Boolean IsStudent=false;
 

@@ -17,7 +17,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import co.edu.unal.unacompaamiento.Utils.EstudianteService;
+import co.edu.unal.unacompaamiento.Services.EstudianteService;
 import co.edu.unal.unacompaamiento.model.Estudiante;
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -35,7 +35,7 @@ public class EstudianteAdapter extends ArrayAdapter<Estudiante> {
         TextView txtNombre_Estudiante = (TextView)rowView.findViewById(R.id.Nombre_Estudiante);
 
         txtID_Estudiante.setText(String.format("ID:%s",estudiantes.get(position).getId()));
-        txtNombre_Estudiante.setText(String.format("Nombre:%s",estudiantes.get(position).getNombre()));
+        txtNombre_Estudiante.setText(String.format("Nombre:%s",estudiantes.get(position).getName()));
 
         return rowView;
     }
