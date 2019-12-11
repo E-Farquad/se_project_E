@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity{
 
     private EditText username;
     private EditText password;
-    public static final String BaseURL = "http://192.168.0.18:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
     private Boolean InDataBase=false;
     private Boolean IsStudent=false;
 
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity{
             return;
         }
         Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
-        Verifiable verifiable = new Verifiable(user,pass);
+        final Verifiable verifiable = new Verifiable(user,pass);
         LogInService postService = retrofit.create(LogInService.class);
         Call<Boolean> call = postService.VerifyIfUser(verifiable);
         call.enqueue(new Callback<Boolean>() {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity{
                 public void onResponse(Call<Boolean> call, Response<Boolean> response) {
                     IsStudent = response.body();
                     if (IsStudent){
-                        openStudentMain();
+                        openStudentMain(verifiable.getUsername());
                     }else{
                         openTutorMain();
                     }
@@ -124,8 +124,9 @@ public class MainActivity extends AppCompatActivity{
 
     }
 
-    private void openStudentMain() {
+    private void openStudentMain(String username) {
         Intent intent = new Intent(this, Estudiante1.class);
+        intent.putExtra("Usuario", username);
         startActivity(intent);
     }
 
