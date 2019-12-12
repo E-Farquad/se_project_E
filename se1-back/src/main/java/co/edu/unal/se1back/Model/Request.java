@@ -20,12 +20,12 @@ public class Request{
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name="transmitter")
-    private User transmitter;
+    @JoinColumn(name="student")
+    private Student student;
 
     @ManyToOne
-    @JoinColumn(name="receiver")
-    private User receiver;
+    @JoinColumn(name="tutor")
+    private Tutor tutor;
 
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date request_date;
@@ -33,13 +33,14 @@ public class Request{
     @NotBlank
     private String message;
 
-    public Request(Long id, User transmitter, User receiver, Date request_date, String message) {
+    public Request(Long id, Student student, Tutor tutor, Date request_date, String message) {
         this.id = id;
-        this.transmitter = transmitter;
-        this.receiver = receiver;
+        this.student = student;
+        this.tutor = tutor;
         this.request_date = request_date;
         this.message = message;
     }
+
 
     public Long getId() {
         return id;
@@ -49,20 +50,20 @@ public class Request{
         this.id = id;
     }
 
-    public User getTransmitter() {
-        return transmitter;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setTransmitter(User transmitter) {
-        this.transmitter = transmitter;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
-    public User getReceiver() {
-        return receiver;
+    public Tutor getTutor() {
+        return tutor;
     }
 
-    public void setReceiver(User receiver) {
-        this.receiver = receiver;
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
     }
 
     public Date getRequest_date() {

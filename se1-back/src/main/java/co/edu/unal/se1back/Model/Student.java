@@ -31,10 +31,15 @@ public class Student extends User {
 
     @ManyToOne
     @JoinColumn(name="tutor_id")
-    @JsonManagedReference
+    //@JsonManagedReference
+    @JsonBackReference
     private Tutor tutor;
 
-    public Student(Long id,Long document_number, String document_type,String email, String name, String password,String rol, String username,String career,String pa,  String papa,  String pappi,  String progress, Tutor tutor) {
+    public Student() {
+        super();
+    }
+
+    public Student(Long id, Long document_number, String document_type, String email, String name, String password, String rol, String username, String career, String pa, String papa, String pappi, String progress, Tutor tutor) {
         this.setId(id);
         this.setUsername(username);
         this.setPassword(password);

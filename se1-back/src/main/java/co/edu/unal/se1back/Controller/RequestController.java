@@ -25,60 +25,44 @@ public class RequestController {
     RequestRepository requestRepository;
 
     @Autowired
-    UserRepository userRepository;
+    StudentRepository studentRepository;
+
+    @Autowired
+    TutorRepository tutorRepository;
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    //request
-    @GetMapping("/request")
-    public List<Request> getAllRequests() {
-        return requestRepository.findAll();
-    }
+    @GetMapping("/requestByTutorId/{id}")
+    public List<Request> getRequestByTutorId(@PathVariable (value = "id") Long id)throws SQLException, ResourceNotFoundException {
 
-    @GetMapping("/requestInfoById/{id}")
-    public List<Request> getrequestInfoById(@PathVariable (value = "id") Long id)throws SQLException, ResourceNotFoundException {
-
-        String sqlA = "SELECT * FROM request WHERE receiver=?";
+        String sqlA = "SELECT * FROM request WHERE tutor=?";
         List<Request> requestsInfo= jdbcTemplate.query(sqlA,new Object[]{id}, (rs, rowNum) ->
                 new Request(
                         rs.getLong("id"),
-                        userRepository.findById(rs.getLong("transmitter")).get(),
-                        userRepository.findById(rs.getLong("receiver")).get(),
+                        studentRepository.findById(rs.getLong("student")).get(),
+                        tutorRepository.findById(rs.getLong("tutor")).get(),
                         rs.getDate("request_date"),
                         rs.getString("message")));
 
         return requestsInfo;
 
     }
-/*
-    @GetMapping("/tutorIdByRequestUsername/{username}")
-    public Long getTutorId(@PathVariable(value = "username") String username){
-        return requestRepository.getTutorId(username);
-    }
 
-    @GetMapping("/requestTutorById/{id}")
-    public List<Tutor> getTutorInfo(@PathVariable (value = "id") Long tutorId)throws SQLException{
+    @GetMapping("/requestByStudentId/{id}")
+    public List<Request> getRequestByStudentId(@PathVariable (value = "id") Long id)throws SQLException, ResourceNotFoundException {
 
-        String sqlA = "SELECT * FROM tutor WHERE id=?";
-
-        List<Tutor> tutor = jdbcTemplate.query(sqlA,new Object[]{tutorId} , (rs, rowNum) ->
-                new Tutor(
+        String sqlA = "SELECT * FROM request WHERE student=?";
+        List<Request> requestsInfo= jdbcTemplate.query(sqlA,new Object[]{id}, (rs, rowNum) ->
+                new Request(
                         rs.getLong("id"),
-                        rs.getLong("document_number"),
-                        rs.getString("document_type"),
-                        rs.getString("email"),
-                        rs.getString("name"),
-                        rs.getString("password"),
-                        rs.getString("rol"),
-                        rs.getString("username"),
-                        rs.getString("department"),
-                        rs.getString("faculty"),
-                        rs.getString("office"),
-                        rs.getString("office_hours"),
-                        null));
+                        studentRepository.findById(rs.getLong("student")).get(),
+                        tutorRepository.findById(rs.getLong("tutor")).get(),
+                        rs.getDate("request_date"),
+                        rs.getString("message")));
 
-        return tutor;
+        return requestsInfo;
+
     }
 
     @PostMapping("/request")
@@ -86,44 +70,4 @@ public class RequestController {
         return requestRepository.save(request);
     }
 
-    @GetMapping("/request/{id_request}")
-    public Request getRequestById(@PathVariable(value = "id_request") Long requestId) {
-        return requestRepository.findById(requestId)
-                .orElseThrow(() -> new ResourceNotFoundException("Request", "id_request", requestId));
-    }
-
-    @PutMapping("/request/{id_request}")
-    public Request updateRequest(@PathVariable(value = "id_request") Long requestId,
-                                 @Valid @RequestBody Request requestDetails) {
-
-        Request request = requestRepository.findById(requestId)
-                .orElseThrow(() -> new ResourceNotFoundException("Request", "id_request", requestId));
-
-
-
-        request.setPapa(requestDetails.getPapa());
-        request.setPa(requestDetails.getPa());
-        request.setPappi(requestDetails.getPappi());
-        request.setCareer(requestDetails.getCareer());
-        request.setProgress(requestDetails.getProgress());
-        request.setTutor(requestDetails.getTutor());
-
-        Request updatedRequest = requestRepository.save(request);
-
-
-
-
-        return updatedRequest;
-    }
-
-    @DeleteMapping("/request/{id_request}")
-    public ResponseEntity<?> deleteRequest(@PathVariable(value = "id_request") Long requestId) {
-
-        Request request = requestRepository.findById(requestId)
-                .orElseThrow(() -> new ResourceNotFoundException("Request", "id_request", requestId));
-
-        requestRepository.delete(request);
-        return ResponseEntity.ok().build();
-    }
-*/
 }

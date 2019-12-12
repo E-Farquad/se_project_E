@@ -26,9 +26,13 @@ public class Tutor extends User {
     private String department;
 
     @OneToMany(mappedBy="tutor")
-    @JsonBackReference
+    //@JsonBackReference
+    @JsonManagedReference
     private List <Student> students;
 
+    public Tutor(){
+        super();
+    }
 
     public Tutor(Long id,Long document_number, String document_type,String email, String name, String password,String rol, String username, String department, String faculty,String office, String office_hours, List<Student> students) {
         this.setId(id);
