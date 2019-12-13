@@ -17,7 +17,7 @@
         >
 
         <Button
-        android:id="@+id/inboxt"
+        android:id="@+id/inbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -29,8 +29,8 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:id="@+id/tutor_id"
-            android:text="Antonio Fernandez"
+            android:id="@+id/tutor_name"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_marginEnd="50dp"
@@ -56,22 +56,7 @@
                 android:id="@+id/listaTutor"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-                <TextView
-                    android:id="@+id/ID_Estudiante"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:padding="5dp"/>
-                <TextView
-                    android:id="@+id/Nombre_Estudiante"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:padding="5dp"/>
+
 
         </LinearLayout>
 
