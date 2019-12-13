@@ -31,8 +31,30 @@ public class TutorController {
         return tutorRepository.findAll();
     }
 
+    @GetMapping("/tutorInfoByUsername/{username}")
+    public List<Tutor> getTutorInfo(@PathVariable (value = "username") String username){
+
+        String sqlA = "SELECT * FROM tutor WHERE username=?";
+        List<Tutor> tutor = jdbcTemplate.query(sqlA,new Object[]{username}, (rs, rowNum) ->
+                new Tutor(
+                        rs.getLong("id"),
+                        rs.getLong("document_number"),
+                        rs.getString("document_type"),
+                        rs.getString("email"),
+                        rs.getString("name"),
+                        rs.getString("password"),
+                        rs.getString("rol"),
+                        rs.getString("username"),
+                        rs.getString("department"),
+                        rs.getString("faculty"),
+                        rs.getString("office"),
+                        rs.getString("office_hours"),
+                        null));
+        return tutor;
+    }
+
     @GetMapping("/tutorStudents/{tutor_id}")
-    public List<Student> getStudentInfo(@PathVariable (value = "tutor_id") Long tutorId){
+    public List<Student> getStudentsInfo(@PathVariable (value = "tutor_id") Long tutorId){
 
         String sqlA = "SELECT * FROM student WHERE tutor_id=?";
         List<Student> students = jdbcTemplate.query(sqlA,new Object[]{tutorId}, (rs, rowNum) ->
