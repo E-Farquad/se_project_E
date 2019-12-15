@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity{
 
     private EditText username;
     private EditText password;
-    public static final String BaseURL = "http://192.168.1.120:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
     private Boolean InDataBase=false;
     private Boolean IsStudent=false;
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity{
                     if (IsStudent){
                         openStudentMain(verifiable.getUsername());
                     }else{
-                        openTutorMain();
+                        openTutorMain(verifiable.getUsername());
                     }
                 }
 
@@ -130,8 +130,9 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
-    private void openTutorMain() {
+    private void openTutorMain(String username) {
         Intent intent = new Intent(this, Tutor.class);
+        intent.putExtra("Usuario", username);
         startActivity(intent);
     }
 
