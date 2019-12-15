@@ -1,14 +1,15 @@
 package co.edu.unal.unacompaamiento.model;
 
 public class User {
-    private Long id;
-    private String username;
-    private String password;
-    private String name;
-    private String document_type;
-    private Long document_number;
-    private String rol;
-    private String email;
+    Long id;
+    String username;
+    String password;
+    String name;
+    String document_type;
+    Long document_number;
+    String rol;
+    String email;
+
 
     public Long getId() {
         return id;

@@ -37,7 +37,7 @@ public class Tutor extends AppCompatActivity {
     private List estudiantes = new ArrayList();
     private List estudiantesInfoBasica = new ArrayList();
 
-    public static final String BaseURL = "http://192.168.0.12:8080/";
+    public static final String BaseURL = "http://192.168.0.11:8080/";
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
     ProfesorService service = retrofit.create(ProfesorService.class);
 
@@ -52,7 +52,6 @@ public class Tutor extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Tutor.this,Bandeja1.class));
-                finish();
             }
 
         });

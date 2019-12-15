@@ -34,12 +34,13 @@ public class Estudiante1 extends AppCompatActivity {
     private String nombreEstudiante = "";
     private List profesorData = new ArrayList();
     private Long tutorId;
+    private Long studentId;
 
 
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
     EstudianteService service = retrofit.create(EstudianteService.class);
 
-    public static final String BaseURL = "http://192.168.0.12:8080/";
+    public static final String BaseURL = "http://192.168.0.11:8080/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +51,10 @@ public class Estudiante1 extends AppCompatActivity {
         ir_solicitud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Estudiante1.this,solicitud.class));
-                finish();
+                Intent intento = new Intent(Estudiante1.this,solicitud.class);
+                intento.putExtra("ID_tutor", tutorId);
+                intento.putExtra("ID_student", studentId);
+                startActivity(intento);
             }
         });
         ir_bandeja=findViewById(R.id.ir_bandeja);
@@ -59,7 +62,6 @@ public class Estudiante1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Estudiante1.this,Bandeja1.class));
-                finish();
             }
 
         });
@@ -82,6 +84,7 @@ public class Estudiante1 extends AppCompatActivity {
 
                     for(Estudiante e : response.body()){
                         nombreEstudiante = e.getName();
+                        studentId = e.getId();
                         imprimirEstudiante(nombreEstudiante);
                     }
                 }
@@ -159,4 +162,8 @@ public class Estudiante1 extends AppCompatActivity {
         };
         info_tutor.setAdapter(data);
     }
+
+
+
+
 }

@@ -18,4 +18,7 @@ public interface EstudianteService {
     @GET("api/studentTutorById/{id}")
     Call<List<Profesor>> getTutorInfo(@Path(value = "id") Long tutorId);
 
+    @GET("api/student/{id_student}")
+    Call<Estudiante> getStudentById(@Path(value = "id_student") Long studentId);
+
 }
