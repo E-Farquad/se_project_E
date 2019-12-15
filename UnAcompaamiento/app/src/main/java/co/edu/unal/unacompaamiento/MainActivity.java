@@ -14,8 +14,6 @@ import java.io.IOException;
 import java.util.regex.Pattern;
 
 import co.edu.unal.unacompaamiento.Services.LogInService;
-import co.edu.unal.unacompaamiento.Utils.Cliente;
-import co.edu.unal.unacompaamiento.model.User;
 import co.edu.unal.unacompaamiento.model.Verifiable;
 import okhttp3.Request;
 import retrofit2.Call;

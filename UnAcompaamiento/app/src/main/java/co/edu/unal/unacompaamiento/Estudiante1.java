@@ -39,7 +39,7 @@ public class Estudiante1 extends AppCompatActivity {
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
     EstudianteService service = retrofit.create(EstudianteService.class);
 
-    public static final String BaseURL = "http://192.168.1.120:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,7 +148,7 @@ public class Estudiante1 extends AppCompatActivity {
     public void imprimirTutor(List tutor_data){
 
         info_tutor = findViewById(R.id.tutor_data);
-        ArrayAdapter<String> data = new ArrayAdapter<String>(Estudiante1.this,android.R.layout.simple_list_item_1,profesorData){
+        ArrayAdapter<String> data = new ArrayAdapter<String>(Estudiante1.this,android.R.layout.simple_list_item_1,tutor_data){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
                 View view = super.getView(position,convertView,parent);
