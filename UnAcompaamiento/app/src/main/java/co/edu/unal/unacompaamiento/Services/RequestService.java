@@ -11,6 +11,6 @@ public interface RequestService {
     @POST("api/request")
     Call<Request> PostMessage(@Body Request request);
 
-    @GET("api/requestByReceiverID/{receiver}")
-    Call<List<Request>> getRequestsByReceiverId(@Path(value = "receiver") Long tutorId);
+    @GET("api/requestByReceiverID/{id}")
+    Call<List<Request>> getRequestsByReceiverId(@Path(value = "id") Long tutorId);
 }
