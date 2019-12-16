@@ -49,7 +49,7 @@ public class Bandeja1 extends AppCompatActivity {
         call.enqueue(new Callback<List<Request>>() {
             @Override
             public void onResponse(Call<List<Request>> call, Response<List<Request>> response) {
-                Long recibe = 0L, envia = 0L;
+
                 for(Request r : response.body()){
                     mensajesInfo.add(r.getRequest_date()+ "\n"
                                     + "Tutor: " + r.getTutor().getUsername() + "  Estudiante: " + r.getStudent().getUsername()
@@ -59,18 +59,13 @@ public class Bandeja1 extends AppCompatActivity {
                     mensajesInfoDetallada.add(r.getRequest_date());
                     mensajesInfoDetallada.add("Tutor: " + r.getTutor().getUsername() + "  Estudiante: " + r.getStudent().getUsername());
                     mensajesInfoDetallada.add(r.getMessage());
-                    if(r.getReceiver() == r.getStudent().getId() || r.getReceiver() == r.getTutor().getId()){
-                        recibe = r.getTransmitter();
-                        envia = r.getReceiver();
-                    }
-
                     mensajesInfoDetallada.add(r.getReceiver());
                     mensajesInfoDetallada.add(r.getTransmitter());
 
 
                 }
 
-                imprimirRequests(mensajesInfo, recibe, envia);
+                imprimirRequests(mensajesInfo, mensajesInfoDetallada);
             }
 
             @Override
@@ -101,8 +96,8 @@ public class Bandeja1 extends AppCompatActivity {
         */
     }
 
-    void imprimirRequests(final List mensajesInfo, Long receptor, final Long emisor){
-        System.out.println("Datos recogidos: "+receptor +", " + emisor);
+    void imprimirRequests(final List mensajesInfo, final List infoCompletaMensajes){
+
         final ArrayAdapter<String> list_data = new ArrayAdapter<String>(Bandeja1.this, android.R.layout.simple_list_item_2, android.R.id.text1, mensajesInfo){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
@@ -126,11 +121,11 @@ public class Bandeja1 extends AppCompatActivity {
 
                 Long id_estudiante = 0L, id_tutor = 0L, receptor = 0L, transmisor = 0L;
 
-                for(int i = 0; i < mensajesInfo.size(); i++){
-                    if(mensajesInfo.get(i).equals(datos[1])){
+                for(int i = 0; i < infoCompletaMensajes.size(); i++){
+                    if(infoCompletaMensajes.get(i).equals(datos[1])){
 
-                        id_estudiante = receptor;
-                        id_tutor = emisor;
+                        id_estudiante = (Long) infoCompletaMensajes.get(i+2);
+                        id_tutor = (Long) infoCompletaMensajes.get(i+3);
                         receptor = id_estudiante;
                         transmisor = id_tutor;
                     }
@@ -147,9 +142,6 @@ public class Bandeja1 extends AppCompatActivity {
                 System.out.println(transmisor);
                 System.out.println(receptor);
                 startActivity(intento);
-
-
-
             }
         });
 
