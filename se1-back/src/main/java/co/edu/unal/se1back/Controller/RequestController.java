@@ -37,7 +37,7 @@ public class RequestController {
     @GetMapping("/requestByReceiverID/{id}")
     public List<Request> getRequestByReceiverId(@PathVariable (value = "id") Long id)throws SQLException, ResourceNotFoundException {
 
-        String sqlA = "SELECT * FROM request WHERE receiver=? order by request_date";
+        String sqlA = "SELECT * FROM request WHERE receiver=? order by request_date desc";
         List<Request> requestsInfo= jdbcTemplate.query(sqlA,new Object[]{id}, (rs, rowNum) ->
                 new Request(
                         rs.getLong("id"),
@@ -51,6 +51,8 @@ public class RequestController {
         return requestsInfo;
 
     }
+
+
 
 
 
