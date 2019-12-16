@@ -33,6 +33,27 @@ public class RequestController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+
+    @GetMapping("/requestByReceiverID/{id}")
+    public List<Request> getRequestByReceiverId(@PathVariable (value = "id") Long id)throws SQLException, ResourceNotFoundException {
+
+        String sqlA = "SELECT * FROM request WHERE receiver=? order by request_date";
+        List<Request> requestsInfo= jdbcTemplate.query(sqlA,new Object[]{id}, (rs, rowNum) ->
+                new Request(
+                        rs.getLong("id"),
+                        studentRepository.findById(rs.getLong("student")).get(),
+                        tutorRepository.findById(rs.getLong("tutor")).get(),
+                        rs.getDate("request_date"),
+                        rs.getString("message"),
+                        rs.getLong("receiver"),
+                        rs.getLong("transmitter") ));
+
+        return requestsInfo;
+
+    }
+
+
+
     @GetMapping("/requestByTutorId/{id}")
     public List<Request> getRequestByTutorId(@PathVariable (value = "id") Long id)throws SQLException, ResourceNotFoundException {
 
@@ -44,8 +65,9 @@ public class RequestController {
                         tutorRepository.findById(rs.getLong("tutor")).get(),
                         rs.getDate("request_date"),
                         rs.getString("message"),
-                        rs.getLong("transmitter"),
-                        rs.getLong("receiver") ));
+                        rs.getLong("receiver"),
+                        rs.getLong("transmitter")
+                         ));
 
 
         return requestsInfo;
@@ -63,8 +85,9 @@ public class RequestController {
                         tutorRepository.findById(rs.getLong("tutor")).get(),
                         rs.getDate("request_date"),
                         rs.getString("message"),
-                        rs.getLong("transmitter"),
-                        rs.getLong("receiver") ));
+                        rs.getLong("receiver"),
+                        rs.getLong("transmitter")
+                        ));
 
         return requestsInfo;
 

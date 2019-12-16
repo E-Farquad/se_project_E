@@ -63,7 +63,9 @@ public class Estudiante1 extends AppCompatActivity {
         ir_bandeja.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Estudiante1.this,Bandeja1.class));
+                Intent intento = new Intent(Estudiante1.this,Bandeja1.class);
+                intento.putExtra("ID_receptor",studentId);
+                startActivity(intento);
             }
 
         });
