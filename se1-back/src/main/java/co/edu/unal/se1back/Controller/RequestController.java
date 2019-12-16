@@ -43,7 +43,10 @@ public class RequestController {
                         studentRepository.findById(rs.getLong("student")).get(),
                         tutorRepository.findById(rs.getLong("tutor")).get(),
                         rs.getDate("request_date"),
-                        rs.getString("message")));
+                        rs.getString("message"),
+                        rs.getLong("transmitter"),
+                        rs.getLong("receiver") ));
+
 
         return requestsInfo;
 
@@ -59,7 +62,9 @@ public class RequestController {
                         studentRepository.findById(rs.getLong("student")).get(),
                         tutorRepository.findById(rs.getLong("tutor")).get(),
                         rs.getDate("request_date"),
-                        rs.getString("message")));
+                        rs.getString("message"),
+                        rs.getLong("transmitter"),
+                        rs.getLong("receiver") ));
 
         return requestsInfo;
 

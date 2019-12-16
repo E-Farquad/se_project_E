@@ -54,6 +54,8 @@ public class Estudiante1 extends AppCompatActivity {
                 Intent intento = new Intent(Estudiante1.this,solicitud.class);
                 intento.putExtra("ID_tutor", tutorId);
                 intento.putExtra("ID_student", studentId);
+                intento.putExtra("ID_transmisor", studentId);
+                intento.putExtra("ID_receptor", tutorId);
                 startActivity(intento);
             }
         });

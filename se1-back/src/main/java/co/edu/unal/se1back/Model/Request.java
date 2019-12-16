@@ -33,14 +33,32 @@ public class Request{
     @NotBlank
     private String message;
 
-    public Request(Long id, Student student, Tutor tutor, Date request_date, String message) {
+    @NotNull
+    private Long transmitter;
+
+
+    @NotNull
+    private Long receiver;
+
+    public Request(Long id, Student student, Tutor tutor, Date request_date, String message, Long transmitter, Long receiver) {
         this.id = id;
         this.student = student;
         this.tutor = tutor;
         this.request_date = request_date;
         this.message = message;
+        this.transmitter = transmitter;
+        this.receiver = receiver;
     }
 
+    public Request() {
+        this.id = null;
+        this.student = null;
+        this.tutor = null;
+        this.request_date = null;
+        this.message = null;
+        this.transmitter = null;
+        this.receiver = null;
+    }
 
     public Long getId() {
         return id;
@@ -80,5 +98,21 @@ public class Request{
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Long getTransmitter() {
+        return transmitter;
+    }
+
+    public void setTransmitter(Long transmitter) {
+        this.transmitter = transmitter;
+    }
+
+    public Long getReceiver() {
+        return receiver;
+    }
+
+    public void setReceiver(Long receiver) {
+        this.receiver = receiver;
     }
 }

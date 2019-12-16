@@ -42,6 +42,9 @@ public class solicitud extends AppCompatActivity {
 
                  Long idTutor = getIntent().getLongExtra("ID_tutor",0);
                  Long idEstudiante = getIntent().getLongExtra("ID_student",0);
+                 final Long idTransmisor = getIntent().getLongExtra("ID_transmisor",0);
+                 final Long idReceptor = getIntent().getLongExtra("ID_receptor",0);
+
                  Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
                  ProfesorService profesorService = retrofit.create(ProfesorService.class);
                  EstudianteService  estudianteService = retrofit.create(EstudianteService.class);
@@ -60,20 +63,22 @@ public class solicitud extends AppCompatActivity {
                                  System.out.println("estudiante respondio");
 
                                  String ahora = dateFormat.format(new Date());
-                                 ahora = ahora.replace(" ","T");
+                                 //ahora = ahora.replace(" ","T");
                                  System.out.println("ahora: "+ahora);
-                                 Request NuevoMensaje = new Request(e,p,ahora,message.getText().toString());
+                                 Request NuevoMensaje = new Request(e,p,ahora,message.getText().toString(),idTransmisor,idReceptor);
                                  System.out.println("request creado: \n"+ NuevoMensaje.getId());
                                  System.out.println(NuevoMensaje.getStudent().getId());
                                  System.out.println(NuevoMensaje.getTutor().getId());
                                  System.out.println(NuevoMensaje.getRequest_date());
                                  System.out.println(NuevoMensaje.getMessage());
+                                 System.out.println(NuevoMensaje.getTransmitter());
+                                 System.out.println(NuevoMensaje.getReceiver());
                                  Call<Request> call3 = requestService.PostMessage(NuevoMensaje);
                                  call3.enqueue(new Callback<Request>() {
                                      @Override
                                      public void onResponse(Call<Request> call, Response<Request> response) {
 
-                                         System.out.println("Mensaje colocado: " );
+                                         System.out.println("Mensaje colocado: " + response.message());
                                          finish();
                                      }
 
