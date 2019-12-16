@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.regex.Pattern;
 
 import co.edu.unal.unacompaamiento.Services.LogInService;
+
 import co.edu.unal.unacompaamiento.model.Verifiable;
 import okhttp3.Request;
 import retrofit2.Call;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity{
 
     private EditText username;
     private EditText password;
-    public static final String BaseURL = "http://192.168.0.11:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
     private Boolean InDataBase=false;
     private Boolean IsStudent=false;
 
@@ -47,25 +48,23 @@ public class MainActivity extends AppCompatActivity{
             }
         });
     }
-/*
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.ir_estudiante1:
-                openStudentMain();
-                userLogin();
-
-                break;
-
-            default:
-
-                break;
+    /*
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.ir_estudiante1:
+                    openStudentMain();
+                    userLogin();
+                    break;
+                default:
+                    break;
+            }
         }
-    }
-*/
+    */
     private void userLogin(){
         String user = username.getText().toString().trim();
         String pass = password.getText().toString().trim();
+
 
         if(user.isEmpty()){
             username.setError("El usuario es requerido");
@@ -80,38 +79,12 @@ public class MainActivity extends AppCompatActivity{
         Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
         final Verifiable verifiable = new Verifiable(user,pass);
         LogInService postService = retrofit.create(LogInService.class);
-        final LogInService postService2 = retrofit.create(LogInService.class);
-
         Call<Boolean> call = postService.VerifyIfUser(verifiable);
         call.enqueue(new Callback<Boolean>() {
             @Override
             public void onResponse(Call<Boolean> call, Response<Boolean> response) {
                 System.out.println(response.body());
                 InDataBase = response.body();
-                if(InDataBase){
-
-                    Call<Boolean> call2 = postService2.VerifyIfStudent(verifiable);
-                    call2.enqueue(new Callback<Boolean>() {
-                        @Override
-                        public void onResponse(Call<Boolean> call, Response<Boolean> response) {
-                            IsStudent = response.body();
-                            if (IsStudent){
-                                openStudentMain(verifiable.getUsername());
-                            }else{
-                                openTutorMain(verifiable.getUsername());
-                            }
-                        }
-
-                        @Override
-                        public void onFailure(Call<Boolean> call, Throwable t) {
-                            Log.e("Error", t.getMessage());
-                        }
-                    });
-
-
-                }else{
-                    username.setError("Usuario o contraseña incorrectos");
-                }
             }
 
             @Override
@@ -120,7 +93,30 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        if(InDataBase){
 
+            call = postService.VerifyIfStudent(verifiable);
+            call.enqueue(new Callback<Boolean>() {
+                @Override
+                public void onResponse(Call<Boolean> call, Response<Boolean> response) {
+                    IsStudent = response.body();
+                    if (IsStudent){
+                        openStudentMain(verifiable.getUsername());
+                    }else{
+                        openTutorMain(verifiable.getUsername());
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<Boolean> call, Throwable t) {
+                    Log.e("Error", t.getMessage());
+                }
+            });
+
+
+        }else{
+            username.setError("Usuario o contraseña incorrectos");
+        }
 
     }
 

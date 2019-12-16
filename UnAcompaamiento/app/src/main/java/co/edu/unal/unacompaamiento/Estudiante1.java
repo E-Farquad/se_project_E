@@ -40,7 +40,7 @@ public class Estudiante1 extends AppCompatActivity {
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
     EstudianteService service = retrofit.create(EstudianteService.class);
 
-    public static final String BaseURL = "http://192.168.0.11:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

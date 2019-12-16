@@ -27,7 +27,7 @@ public class solicitud extends AppCompatActivity {
 
     Button send;
     EditText message;
-    public static final String BaseURL = "http://192.168.0.11:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     @Override
     protected void onCreate(Bundle savedInstanceState){

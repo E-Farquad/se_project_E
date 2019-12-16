@@ -36,8 +36,9 @@ public class Tutor extends AppCompatActivity {
     private String nombreTutor = "";
     private List estudiantes = new ArrayList();
     private List estudiantesInfoBasica = new ArrayList();
+    private Long tutor_id;
 
-    public static final String BaseURL = "http://192.168.0.11:8080/";
+    public static final String BaseURL = "http://192.168.0.12:8080/";
     Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
     ProfesorService service = retrofit.create(ProfesorService.class);
 
@@ -51,7 +52,10 @@ public class Tutor extends AppCompatActivity {
         inbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Tutor.this,Bandeja1.class));
+                Intent intento = new Intent(Tutor.this,Bandeja1.class);
+                intento.putExtra("ID_receptor",tutor_id);
+                System.out.println("Boton de bandeja presionado");
+                startActivity(intento);
             }
 
         });
@@ -72,7 +76,7 @@ public class Tutor extends AppCompatActivity {
                         nombreTutor = p.getName();
                         imprimirNombreProfesor(nombreTutor);
 
-                        final Long tutor_id = p.getId();
+                        tutor_id = p.getId();
                         StudentsTutor(tutor_id);
                     }
                 }
