@@ -26,7 +26,6 @@ public class Tutor extends User {
     private String department;
 
     @OneToMany(mappedBy="tutor",cascade = {CascadeType.ALL})
-
     //@JsonBackReference
     @JsonManagedReference
     private List <Student> students;

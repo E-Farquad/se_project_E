@@ -78,13 +78,40 @@ public class MainActivity extends AppCompatActivity{
         }
         Retrofit retrofit = new Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create()).build();
         final Verifiable verifiable = new Verifiable(user,pass);
-        LogInService postService = retrofit.create(LogInService.class);
+        final LogInService postService = retrofit.create(LogInService.class);
         Call<Boolean> call = postService.VerifyIfUser(verifiable);
         call.enqueue(new Callback<Boolean>() {
             @Override
             public void onResponse(Call<Boolean> call, Response<Boolean> response) {
                 System.out.println(response.body());
                 InDataBase = response.body();
+
+                if(InDataBase){
+
+                    call = postService.VerifyIfStudent(verifiable);
+                    call.enqueue(new Callback<Boolean>() {
+                        @Override
+                        public void onResponse(Call<Boolean> call, Response<Boolean> response) {
+                            IsStudent = response.body();
+                            if (IsStudent){
+                                openStudentMain(verifiable.getUsername());
+                            }else{
+                                openTutorMain(verifiable.getUsername());
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<Boolean> call, Throwable t) {
+                            Log.e("Error", t.getMessage());
+                        }
+                    });
+
+
+                }else{
+                    username.setError("Usuario o contraseña incorrectos");
+                }
+
+
             }
 
             @Override
@@ -93,30 +120,7 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        if(InDataBase){
 
-            call = postService.VerifyIfStudent(verifiable);
-            call.enqueue(new Callback<Boolean>() {
-                @Override
-                public void onResponse(Call<Boolean> call, Response<Boolean> response) {
-                    IsStudent = response.body();
-                    if (IsStudent){
-                        openStudentMain(verifiable.getUsername());
-                    }else{
-                        openTutorMain(verifiable.getUsername());
-                    }
-                }
-
-                @Override
-                public void onFailure(Call<Boolean> call, Throwable t) {
-                    Log.e("Error", t.getMessage());
-                }
-            });
-
-
-        }else{
-            username.setError("Usuario o contraseña incorrectos");
-        }
 
     }
 
